@@ -1,2 +1,2 @@
 # LP サンプル DataMania コーディング
-KROWL様ご提供の LP コーディング課題
+[KROWL](https://krowl.jp/academy/subject/coding/detail/3)様ご提供の LP コーディング課題
