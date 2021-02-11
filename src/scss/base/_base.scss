@@ -1,11 +1,14 @@
 body {
-  // color: pink;
-  // background-image: url(../images/lazy-dog.jpg);
-  // background-size: cover;
+}
+html {
+  scroll-behavior: smooth;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }

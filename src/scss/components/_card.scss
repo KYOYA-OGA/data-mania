@@ -1,0 +1,44 @@
+.card {
+  width: 400px;
+  line-height: 1.75;
+  text-align: left;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  overflow: hidden;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  display: inline-block;
+
+  @include respond(lg) {
+    // width: auto;
+    margin-top: 70px;
+  }
+
+  @include respond(sm) {
+    max-width: 100%;
+  }
+
+  &:nth-of-type(even) {
+    margin-top: 70px;
+  }
+
+  &__image {
+    max-width: 100%;
+    @include respond(lg) {
+      // display: block;
+    }
+  }
+
+  &__name {
+    background-color: $color-primary;
+    color: #fff;
+    padding: 14px 20px;
+    min-height: 84px;
+    @include respond(lg) {
+    }
+  }
+  &__text {
+    padding: 12px 18px;
+    line-height: 1.75;
+  }
+}

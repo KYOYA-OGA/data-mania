@@ -1,0 +1,35 @@
+.btn {
+  border: 1px solid $color-primary;
+  border-radius: 4px;
+  display: inline-block;
+  min-width: 280px;
+  padding: 20px 0;
+  color: $color-primary;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 10px 10px;
+    border-color: transparent transparent #007bff transparent;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-primary;
+    color: #fff;
+
+    &::after {
+      border-color: transparent transparent #fff transparent;
+    }
+  }
+}
